@@ -15,7 +15,7 @@ import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Fragment wechatFragment =new WeChatFragment();
+    private Fragment chatFragment =new WeChatFragment();
     private Fragment newsFragment =new NewsFragment();
     private Fragment friendFragment =new FriendFragment();
     private Fragment configFragment =new ConfigFragment();
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void InitFragment(){
         fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(R.id.id_content,wechatFragment);
+        transaction.add(R.id.id_content, chatFragment);
         transaction.add(R.id.id_content,newsFragment);
         transaction.add(R.id.id_content,friendFragment);
         transaction.add(R.id.id_content,configFragment);
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void HideFragment(FragmentTransaction transaction){
-        transaction.hide(wechatFragment);
+        transaction.hide(chatFragment);
         transaction.hide(newsFragment);
         transaction.hide(friendFragment);
         transaction.hide(configFragment);
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         HideFragment(transaction);
         switch (i){
             case 0:
-                transaction.show(wechatFragment);
+                transaction.show(chatFragment);
                 break;
             case 1:
                 transaction.show(newsFragment);

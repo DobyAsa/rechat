@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@color/black"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
 
 
 
@@ -13,13 +14,14 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#F1F1F1"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/wechat1" />
 
@@ -28,8 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="微信"
-            android:textColor="@color/white"
+            android:text="@string/chat_button"
+            android:textColor="#388E3C"
             android:textSize="30sp" />
     </LinearLayout>
 
@@ -38,13 +40,14 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#F1F1F1"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/wechat2" />
 
@@ -53,8 +56,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="新闻"
-            android:textColor="@color/white"
+            android:text="@string/news_button"
+            android:textColor="#388E3C"
             android:textSize="30sp" />
     </LinearLayout>
 
@@ -64,12 +67,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
+        android:background="#F1F1F1"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/wechat3" />
 
@@ -78,8 +82,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="联系人"
-            android:textColor="@color/white"
+            android:text="@string/firends"
+            android:textColor="#388E3C"
             android:textSize="30sp" />
     </LinearLayout>
 
@@ -89,12 +93,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
+        android:background="#F1F1F1"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/wechat4" />
 
@@ -103,8 +108,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="设置"
-            android:textColor="@color/white"
+            android:text="@string/config_button"
+            android:textColor="#388E3C"
             android:textSize="30sp" />
     </LinearLayout>
 </LinearLayout>

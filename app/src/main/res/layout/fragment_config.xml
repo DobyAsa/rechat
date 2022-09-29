@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="30dp"
-        android:text="这是设置界面"
+        android:textSize="30sp"
+        android:text="@string/config_button"
         android:gravity="center"/>
 
 </FrameLayout>

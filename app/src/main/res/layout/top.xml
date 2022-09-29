@@ -6,12 +6,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="r1kka-wechat"
-        android:textColor="@color/white"
+        android:text="@string/rechat_title"
+        android:textColor="#F1F1F1"
+        android:background="#2BA245"
         android:textSize="30sp" />
 
 </LinearLayout>

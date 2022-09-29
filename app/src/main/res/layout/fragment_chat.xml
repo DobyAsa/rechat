@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WeChatFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycle_view"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:textSize="30sp"
+        android:text="@string/chat_button"
+        android:gravity="center"/>
 </FrameLayout>
+
 
