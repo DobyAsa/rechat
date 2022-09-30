@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FragmentManager fragmentManager;
 
     private LinearLayout linearLayout1,linearLayout2,linearLayout3,linearLayout4;
-    private ImageView imageView1,imageView2,imageView3,imageView4;
-    private TextView textView1,textView2,textView3,textView4;
+    private TextView chat_text, news_text, friends_text, config_text;
 
 
     @Override
@@ -41,16 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout2.setOnClickListener(this);
         linearLayout3.setOnClickListener(this);
         linearLayout4.setOnClickListener(this);
-        
-        imageView1 = findViewById(R.id.imageView1);
-        imageView2 = findViewById(R.id.imageView2);
-        imageView3 = findViewById(R.id.imageView3);
-        imageView4 = findViewById(R.id.imageView4);
 
-        textView1 = findViewById(R.id.textView1);
-        textView2 = findViewById(R.id.textView2);
-        textView3 = findViewById(R.id.textView3);
-        textView4 = findViewById(R.id.textView4);
+        chat_text = findViewById(R.id.textView1);
+        news_text = findViewById(R.id.textView2);
+        friends_text = findViewById(R.id.textView3);
+        config_text = findViewById(R.id.textView4);
 
         InitFragment();
         showFragment(0);
@@ -67,20 +61,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         transaction.add(R.id.id_content,friendFragment);
         transaction.add(R.id.id_content,configFragment);
         transaction.commit();
-        HideFragment(transaction);      //隐藏四个tag
-        
-
+        HideFragment(transaction);
     }
     private void initView(){
         linearLayout1 = findViewById(R.id.LinearLayout1);
         linearLayout2 = findViewById(R.id.LinearLayout2);
         linearLayout3 = findViewById(R.id.LinearLayout3);
         linearLayout4 = findViewById(R.id.LinearLayout4);
-
-        imageView1=findViewById(R.id.imageView1);
-        imageView2=findViewById(R.id.imageView2);
-        imageView3=findViewById(R.id.imageView3);
-        imageView4=findViewById(R.id.imageView4);
     }
 
     private void HideFragment(FragmentTransaction transaction){
@@ -138,22 +125,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void changeColor(int i) {
-        textView1.setTextColor(Color.rgb(255,255,255));
-        textView2.setTextColor(Color.rgb(255,255,255));
-        textView3.setTextColor(Color.rgb(255,255,255));
-        textView4.setTextColor(Color.rgb(255,255,255));
+        chat_text.setTextColor(Color.rgb(255,255,255));
+        news_text.setTextColor(Color.rgb(255,255,255));
+        friends_text.setTextColor(Color.rgb(255,255,255));
+        config_text.setTextColor(Color.rgb(255,255,255));
         switch (i) {
             case 0:
-                textView1.setTextColor(Color.rgb(0, 255, 0));
+                chat_text.setTextColor(Color.rgb(0, 255, 0));
                 break;
             case 1:
-                textView2.setTextColor(Color.rgb(0, 255, 0));
+                news_text.setTextColor(Color.rgb(0, 255, 0));
                 break;
             case 2:
-                textView3.setTextColor(Color.rgb(0, 255, 0));
+                friends_text.setTextColor(Color.rgb(0, 255, 0));
                 break;
             case 3:
-                textView4.setTextColor(Color.rgb(0, 255, 0));
+                config_text.setTextColor(Color.rgb(0, 255, 0));
                 break;
             default:
                 break;
